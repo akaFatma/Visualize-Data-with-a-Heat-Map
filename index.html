@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>HEAT MAP DATA VISUALIZATION</title>
+</head>
+<body>
+    <h1 id="title"> Monthly Global Land-Surface Temperature</h1>
+    <h4 id="description">1753 - 2015: base temperature 8.66℃</h4>
+    <div id="tooltip"></div>
+    <svg id="chart"></svg>
+    <svg id="legend" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <rect  x="10" y="0" width="30" height="30" fill="SteelBlue"></rect>
+            <text x="60" y="20" fill="white">Variance of below -1</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="30" height="30" fill="LightSteelBlue"></rect>
+            <text x="60" y="60" fill="white">On or below average</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="30" height="30" fill="Orange"></rect>
+            <text x="60" y="100" fill="white">Above Avergae</text></g>
+        <g>
+            <rect x="10" y="120" width="30" height="30" fill="Crimson"></rect>
+            <text x="60" y="140" fill="white">Variance of +1 or more</text>
+        </g>
+    </svg>
+    
+    <script src="./main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
+</body>
+</html>
